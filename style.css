@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #050505;
+    color: #dddddf;
+}
+
+header {
+    background: #211b3b;
+    color: rgb(239, 237, 237);
+    padding: 30px 8%;
+    border-bottom: 5px solid #8b5cf6;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #d8d0f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
+
+.titulo-secao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.titulo-secao h2 {
+    margin-bottom: 8px;
+}
+
+.titulo-secao p {
+    color: #70698b;
+}
+
+button {
+    background: #7c3aed;
+    color: white;
+    border: none;
+    padding: 13px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #5b21b6;
+}
+
+.listar-jogos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+#mensagemVazia {
+    color: #70698b;
+}
+
+.card-jogo {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #211b3b18;
+}
+
+.card-jogo img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.info-jogo {
+    padding: 16px;
+}
+
+.info-jogo h3 {
+    margin-bottom: 10px;
+}
+
+.info-jogo p {
+    margin-bottom: 8px;
+    color: #70698b;
+}
+
+.preco {
+    color: #6d28d9 !important;
+    font-weight: bold;
+}
+
+dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 25px;
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+    box-shadow: 0 10px 30px #0003;
+}
+
+dialog::backdrop {
+    background: #0008;
+}
+
+dialog h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.acoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.cancelar {
+    background: #777;
+}
+
+.cancelar:hover {
+    background: #555;
+}
+
+@media (max-width: 600px) {
+    .titulo-secao {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
